@@ -1,9 +1,16 @@
 body,html{
 	height: 100%;
 	margin: 0;
-	background: rgb(44, 47, 59);
-   background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
-	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+	background-image: linear-gradient(
+		rgba(1, 2, 67, 0.915),
+		rgba(3, 0, 37, 0.932)
+	  ),
+	  url("https://i.ibb.co/YZPVrvm/crdblogo.png");
+	  background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+	  font-family: 'Rubik';
+
 }
 
 .chat{
@@ -14,8 +21,9 @@ body,html{
 .card{
 	height: 500px;
 	border-radius: 15px !important;
-	background-color: rgba(0,0,0,0.4) !important;
-	backdrop-filter: blur(3px);
+	background-color: rgba(0, 0, 0, 0.077) !important;
+	backdrop-filter: blur(9px);
+	border: 2px solid rgba(255, 255, 255, 0.047);
 }
 
 .contacts_body{
@@ -48,11 +56,15 @@ border-radius: 0 0 15px 15px !important;
    outline:0px !important;
 }
 .type_msg{
-	background-color: rgba(0,0,0,0.3) !important;
+	background-color: rgba(0, 0, 0, 0.196) !important;
 	border:0 !important;
+	border-radius: 21px;;
 	color:white !important;
-	height: 60px !important;
+	height: 40px !important;
 	overflow-y: auto;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.068) !important;
 }
 	.type_msg:focus{
 	 box-shadow:none !important;
@@ -72,9 +84,15 @@ border-radius: 0 0 15px 15px !important;
 	color: white !important;
 	cursor: pointer;
 }
+
+/* #myimg{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+} */
 .search_btn{
 	border-radius: 0 15px 15px 0 !important;
-	background-color: rgba(0,0,0,0.3) !important;
+	background-color: rgba(0, 0, 0, 0.125) !important;
 	border:0 !important;
 	color: white !important;
 	cursor: pointer;
@@ -109,8 +127,8 @@ border-radius: 0 0 15px 15px !important;
 	width: 70px;
 }
 .img_cont_msg{
-	height: 40px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
 }
 .online_icon{
 	position: absolute;
@@ -226,5 +244,10 @@ border-radius: 0 0 15px 15px !important;
 @media(max-width: 576px){
 	.contacts_card{
 	margin-bottom: 15px !important;
+}
+
+.card{
+	width: 100%;
+	min-height: 100vh;
 }
 }
