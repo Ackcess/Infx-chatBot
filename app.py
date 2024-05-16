@@ -28,3 +28,4 @@ def get_Chat_response(text):
     response = chat.send_message(text)
     return response.text
     
+

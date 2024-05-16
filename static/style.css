@@ -10,7 +10,9 @@ body,html{
       background-position: center;
       background-size: cover;
 	  font-family: 'Rubik';
+	
 
+	  width: 100%;
 }
 
 .chat{
@@ -19,6 +21,7 @@ body,html{
 }
 
 .card{
+	width: 100%;
 	height: 500px;
 	border-radius: 15px !important;
 	background-color: rgba(0, 0, 0, 0.077) !important;
@@ -28,11 +31,11 @@ body,html{
 
 .contacts_body{
 	padding:  0.75rem 0 !important;
-	overflow-y: auto;
+	overflow: scroll;
 	white-space: nowrap;
 }
 .msg_card_body{
-	overflow-y: auto;
+	overflow: scroll;
 }
 .card-header{
 	border-radius: 15px 15px 0 0 !important;
@@ -241,13 +244,43 @@ border-radius: 0 0 15px 15px !important;
 	cursor: pointer;
 	background-color: rgba(0,0,0,0.2);
 }
-@media(max-width: 576px){
+@media screen and (max-width: 640px) {
 	.contacts_card{
 	margin-bottom: 15px !important;
 }
 
 .card{
+	position: absolute;
 	width: 100%;
 	min-height: 100vh;
 }
+
+  .msg_card_body{
+    width: 100%;
+	min-height: 100vh;
 }
+}
+
+
+
+.contacts_body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .contacts_body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .msg_card_body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .msg_card_body::-webkit-scrollbar {
+    display: none;
+  }
+
+  input::placeholder{
+	font-size: 0.8em;
+  }
