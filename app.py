@@ -18,7 +18,6 @@ def chat():
         return get_Chat_response(input)
     except():
         return jsonify({'error': 'Something went wrong'})
-    
 
 
 def get_Chat_response(text):
@@ -29,5 +28,4 @@ def get_Chat_response(text):
     return response.text
     
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
