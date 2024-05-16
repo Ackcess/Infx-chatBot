@@ -20,7 +20,7 @@ def chat():
 
 
 def get_Chat_response(text):
-    text = text + ' Note the following: Answer greetings as human do, answer only crdb bank related information, the event going on is crdb chat bot launching day, only use text words with less than 20 words, if asked about activating or launching, launch action simply answer activation successfuly!' 
+    text = text + '[ Note: answer the event going on is crdb chat bot launching day and answer only crdb bank related questions, if you are asked so] use less than 20 words' 
     model = genai.GenerativeModel('gemini-1.0-pro-001')
     chat = model.start_chat(history=[])
     response = chat.send_message(text)
