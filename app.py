@@ -12,7 +12,6 @@ CORS(app,supports_credentials=True)
 @cross_origin(supports_credentials=True)
 def chat():
     try:
-        print(request.get_json())
         mesg = request.json.get('msg')
         input = mesg
         return get_Chat_response(input)
@@ -28,4 +27,5 @@ def get_Chat_response(text):
     return response.text
     
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
