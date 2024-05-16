@@ -21,8 +21,8 @@ def chat():
 
 
 def get_Chat_response(text):
-    text = text + '[explain with less than 20 words but if you are asked about CRDB BANK simply reply that today is crdb bank chat bot\
-          launching day  unless otherwise if the different question and it is a greeting , just reply nicely as human do ] ' 
+    text = text + '[explain with less than 20 words but if you are asked about CRDB BANK , use descriptive words to explain that today is crdb bank chat bot\
+          launching day, be more friendly and creative unless otherwise if the different question and it is a greeting , just reply nicely as human do ] ' 
     model = genai.GenerativeModel('gemini-pro')
     chat = model.start_chat(history=[])
     response = chat.send_message(text)
