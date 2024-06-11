@@ -20,6 +20,7 @@ def chat():
 
 
 def get_Chat_response(text):
+    print("text:")
     text = text + '[ Note: answer the event going on is crdb chat bot launching day and answer only crdb bank related questions, if you are asked so] use less than 20 words' 
     model = genai.GenerativeModel('gemini-1.0-pro-001')
     chat = model.start_chat(history=[])
