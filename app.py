@@ -25,6 +25,7 @@ def get_Chat_response(text):
     model = genai.GenerativeModel('gemini-1.0-pro-001')
     chat = model.start_chat(history=[])
     response = chat.send_message(text)
+    print(response)
     return response.text
     
 
