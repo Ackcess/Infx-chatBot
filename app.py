@@ -11,6 +11,12 @@ CORS(app,supports_credentials=True)
 multi_line_text = """
 IMC is a full service Sales and Marketing agency, with our core focuses being the creative and innovative brand solutions on the digital landscape and our vast experience with on-the-ground consumer engagement.We combine strategy, creativity and organization under one roof to deliver top quality work. Our hard work puts us on the map, and our commitment to creative innovation keeps us there. Not only are we a nimble team of qualified personnel, we guarantee positive game changing results with our creative and strategic solutions to smarter marketing.
 
+You Need, Imperial Marketing & Communications
+    CONTACTS. +255 713 525 152
+ md@imc.co.tz
+    ADDRESS.
+ LOCATION ADDRESS Tunisia Street, Ada Estate, Plot No. 3
+
 We are an established, innovative development team with years of experience in hardware and software development, schematic and layout-design, and development and production of complete control systems.
 
 Internet of Things (IoT)
@@ -118,12 +124,7 @@ She is instrumental in managing the clients’ content-related assets, community
 
 In a competitive market with price sensitive consumers and big budget competitors you need more than a creative agency.
 
-You Need, Imperial Marketing & Communications
-    CONTACTS.
- +255 713 525 152
- md@imc.co.tz
-    ADDRESS.
- Tunisia Street, Ada Estate, Plot No. 3
+
 
 """
 
