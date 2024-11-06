@@ -21,9 +21,7 @@ def chat():
 
 def get_Chat_response(text):
     print("text:",text)
-    text = text + '[ Note: answer the say about imperial marketing and innovation compay in tanzania only related questions,search information here https://www.imperialinnovations.co.tz/
-
- if you are asked so] use less than 20 words' 
+    text = text + '[ Note:answer greetings if asked any, and other stuffs only answer questions about imperial marketing and innovation compay in tanzania only related questions,search information here https://www.imperialinnovations.co.tz [ if you are asked so] use less than 20 words' 
     model = genai.GenerativeModel('gemini-1.0-pro-001')
     chat = model.start_chat(history=[])
     response = chat.send_message(text)
