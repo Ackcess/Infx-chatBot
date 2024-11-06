@@ -120,7 +120,7 @@ def chat():
 
 def get_Chat_response(text):
     print("text:",text)
-    text = text + '[ Note: respond to greetings review all questions to answers from the following script----> ' + multi_line_text 
+    text = text + '[ Note: respond to greetings review all questions about imperial innovation and marketing only, to answers from the following script----> ' + multi_line_text 
     model = genai.GenerativeModel('gemini-1.0-pro-001')
     chat = model.start_chat(history=[])
     response = chat.send_message(text)
